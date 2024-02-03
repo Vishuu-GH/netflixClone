@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        input {
+            display: none;
+        }
+
+        h2 {
+            color: #333;
+            cursor: pointer;
+        }
+
+        p {
+            line-height: 1.5;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        input:checked + h2 + p {
+            max-height: 1000px; /* Adjust to a sufficiently large value */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Frequently Asked Questions</h1>
+
+    <section>
+        <input type="checkbox" id="q1">
+        <h2><label for="q1">Question 1: What is Lorem Ipsum?</label></h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+    </section>
+
+    <section>
+        <input type="checkbox" id="q2">
+        <h2><label for="q2">Question 2: How Can I Contact Support?</label></h2>
+        <p>You can contact our support team by emailing support@example.com...</p>
+    </section>
+
+    <!-- Add more sections as needed -->
+
+</body>
+</html>
